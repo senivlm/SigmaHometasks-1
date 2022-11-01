@@ -1,7 +1,7 @@
 ﻿using Hometask1;
 
 var testProduct = new Product("Schweppes", 30, 500);
-
+// Цей список краще огорнути класом.
 var products = new List<Product>
 {
     new ("Carrot", 10, 5),
