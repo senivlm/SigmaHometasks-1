@@ -23,7 +23,8 @@ public class Meat : Product
     }
     
     public override void ConsoleInput()
-    {   
+    {
+        Console.WriteLine("Meat product: ");
         base.ConsoleInput();
         Console.Write("Input meat type: ");
         Type = (Type)Convert.ToInt32(Console.ReadLine());

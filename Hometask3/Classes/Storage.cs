@@ -5,15 +5,17 @@ namespace Hometask3.Classes;
 
 public class Storage
 {
-    private readonly List<Product> _products;
+    private List<Product> _products;
+
+    public void Sort() => _products.Sort();
 
     public void Add(Product product) => _products.Add(product);
 
-    private void ConsoleInit()
+    public void ConsoleInit()
     {
-        var temp = new List<Product> { new Product(), new Meat(), new DairyProduct() };
+        _products = new List<Product> { new Product(), new Meat(), new DairyProduct() };
 
-        foreach (var item in temp)
+        foreach (var item in _products)
         {
             item.ConsoleInput();
         }
@@ -65,4 +67,6 @@ public class Storage
     }
 
     public Storage(params Product[] products) => _products = new List<Product>(products);
+
+    public Storage() => _products = new List<Product>();
 }

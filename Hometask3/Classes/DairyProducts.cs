@@ -26,6 +26,7 @@ public class DairyProduct : Product
     
     public override void ConsoleInput()
     {   
+        Console.WriteLine("Dairy product: ");
         base.ConsoleInput();
         Console.Write("Input expiration date: ");
         _expirationDate = Convert.ToUInt32(Console.ReadLine());

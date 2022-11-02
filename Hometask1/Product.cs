@@ -1,6 +1,6 @@
 ﻿namespace Hometask1;
 
-public class Product
+public class Product : IComparable
 {
     private string _name;
     public string Name
@@ -38,7 +38,7 @@ public class Product
     private double Weight
     {
         get => _weight;
-        set
+        init
         {
             if (value > 0)
             {
@@ -63,6 +63,7 @@ public class Product
     }
 
     public override string ToString() => $"Name: {Name}\tprice: {Price}\tweight: {Weight}";
+    public int CompareTo(object? obj) => _price.CompareTo(((Product)obj).Price);
 
     public override bool Equals(object? obj) => _name == ((Product)obj).Name && 
                                                 _price == ((Product)obj).Price &&
@@ -77,5 +78,5 @@ public class Product
         Weight = weight;
     }
     
-    public Product() : this(string.Empty, default, default) { }
+    public Product() { }
 }
