@@ -12,6 +12,21 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Content Include="bin\Debug\net6.0\Hometask1.deps.json" />
+      <Content Include="bin\Debug\net6.0\Hometask1.dll" />
+      <Content Include="bin\Debug\net6.0\Hometask1.exe" />
+      <Content Include="bin\Debug\net6.0\Hometask1.pdb" />
+      <Content Include="bin\Debug\net6.0\Hometask1.runtimeconfig.json" />
+      <Content Include="bin\Debug\net6.0\Hometask3.deps.json" />
+      <Content Include="bin\Debug\net6.0\Hometask3.dll" />
+      <Content Include="bin\Debug\net6.0\Hometask3.exe" />
+      <Content Include="bin\Debug\net6.0\Hometask3.pdb" />
+      <Content Include="bin\Debug\net6.0\Hometask3.runtimeconfig.json" />
+      <Content Include="bin\Debug\net6.0\Hometask4.deps.json" />
+      <Content Include="bin\Debug\net6.0\Hometask4.dll" />
+      <Content Include="bin\Debug\net6.0\Hometask4.exe" />
+      <Content Include="bin\Debug\net6.0\Hometask4.pdb" />
+      <Content Include="bin\Debug\net6.0\Hometask4.runtimeconfig.json" />
       <Content Include="obj\Debug\net6.0\apphost.exe" />
       <Content Include="obj\Debug\net6.0\Hometask4.AssemblyInfoInputs.cache" />
       <Content Include="obj\Debug\net6.0\Hometask4.assets.cache" />
