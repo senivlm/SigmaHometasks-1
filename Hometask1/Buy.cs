@@ -1,22 +1,26 @@
-﻿namespace Hometask1;
+﻿using Hometask1.Enums;
+
+namespace Hometask1;
 
 public class Buy
 {
-    private IEnumerable<Product> _products;
-    public IEnumerable<Product> Products
+    private Product _product;
+    public uint Amount { get; set; }
+
+    public Product Product
     {
-        get => new List<Product>(_products);
-        init => _products = value;
+        get => _product;
+        set => _product = new (value.Name, value.Price, value.Currency, value.Weight);
     }
 
-    public Buy(IEnumerable<Product> products) => 
-        Products = products ?? throw new NullReferenceException();
+    public override string ToString() => $"Product {_product.ToString()}\tAmount: {Amount}";
 
-    public override bool Equals(object? obj) =>
-        _products.OrderBy(t => t.Name)
-                 .SequenceEqual(((Buy)obj)
-                     .Products.OrderBy(t => t.Name));
+    public override bool Equals(object? obj) => _product.Name == ((Buy)obj).Product.Name && 
+                                                Amount == ((Buy)obj).Amount;
 
-    public override string ToString() => 
-        String.Join("", Products.Select(t => t.ToString() + "\tcount: " + Products.Count(x => x.Name == t.Name) + '\n').Distinct());
+    public Buy(Product product, uint amount)
+    {
+        Product = product;
+        Amount = amount;
+    }
 }

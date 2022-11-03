@@ -1,4 +1,5 @@
 ﻿using Hometask1;
+using Hometask1.Enums;
 using Hometask3.Enums;
 using Type = System.Type;
 
@@ -8,7 +9,8 @@ public class DairyProduct : Product
 {
     private uint _expirationDate;
 
-    public DairyProduct(string name, decimal price, double weight, uint expirationDate) : base(name, price, weight) 
+    public DairyProduct(string name, decimal price, Currency currency, double weight, uint expirationDate) 
+        : base(name, price, currency, weight) 
         => _expirationDate = expirationDate;
 
     public override void ChangePrice(decimal percents)

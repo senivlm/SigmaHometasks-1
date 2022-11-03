@@ -1,4 +1,5 @@
 ﻿using Hometask1;
+using Hometask1.Enums;
 using Hometask3.Classes;
 using Hometask3.Enums;
 using Type = Hometask3.Enums.Type;
@@ -9,9 +10,9 @@ Console.WriteLine("Storage #1");
 storage.Output();
 
 var storage2 = new Storage(
-    new Product("Cola", 23, 500), 
-    new Meat("Globyno", 200, 200, Category.SecondaryVariety, Type.Beef), 
-    new DairyProduct("Milk", 300, 300, 14));
+    new Product("Cola", 23, Currency.UAH, 500), 
+    new Meat("Globyno", 200, Currency.UAH, 200, Category.SecondaryVariety, Type.Beef), 
+    new DairyProduct("Milk", 300, Currency.UAH, 300, 14));
 
 Console.WriteLine("\n\nStorage #2");
 //storage2.Output();

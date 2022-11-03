@@ -1,4 +1,6 @@
-﻿namespace Hometask1;
+﻿using Hometask1.Enums;
+
+namespace Hometask1;
 
 public class Product : IComparable
 {
@@ -35,7 +37,7 @@ public class Product : IComparable
 
     private double _weight;
 
-    private double Weight
+    public double Weight
     {
         get => _weight;
         init
@@ -48,6 +50,8 @@ public class Product : IComparable
             Console.WriteLine("Weight should not be less than 0!");
         }
     }
+    
+    public Currency Currency { get; set; }
 
     public virtual void ChangePrice(decimal percents) => Price += Price * 100 / percents;
 
@@ -57,12 +61,14 @@ public class Product : IComparable
         _name = Console.ReadLine();
         Console.Write("Enter price: ");
         decimal.TryParse(Console.ReadLine(), out _price);
+        Console.Write("Enter currency (UAH - 1, USD - 2, EUR - 3): ");
+        Currency = (Currency)Convert.ToInt32(Console.ReadLine());
         Console.Write("Enter weight: ");
         double.TryParse(Console.ReadLine(), out _weight);
         Console.WriteLine();
     }
 
-    public override string ToString() => $"Name: {Name}\tprice: {Price}\tweight: {Weight}";
+    public override string ToString() => $"Name: {Name} price: {Price} currency: {Currency} weight: {Weight}";
     public int CompareTo(object? obj) => _price.CompareTo(((Product)obj).Price);
 
     public override bool Equals(object? obj) => _name == ((Product)obj).Name && 
@@ -71,11 +77,12 @@ public class Product : IComparable
 
     public override int GetHashCode() => HashCode.Combine(_name, _price, _weight);
 
-    public Product(string name, decimal price, double weight)
+    public Product(string name, decimal price, Currency currency, double weight)
     {
         Name = name;
         Price = price ;
         Weight = weight;
+        Currency = currency;
     }
     
     public Product() { }

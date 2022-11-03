@@ -1,7 +1,6 @@
 ﻿using Hometask1;
 using Hometask1.Enums;
-
-var testProduct = new Product("Schweppes", 30, Currency.UAH, 500);
+using Hometask5;
 
 var products = new List<Product>
 {
@@ -19,8 +18,5 @@ var buy2 = new Buy(products[2], 1);
 var buy3 = new Buy(products[4], 2);
 var buy4 = new Buy(products[1], 7);
 
-
-Console.WriteLine("Check.GetBuyInfo(buy):");
-Check.GetBuyInfo(buy);
-Console.WriteLine("Check.GetProductInfo(testProduct):");
-Check.GetProductInfo(testProduct);
+var basket = new Basket(buy, buy2, buy3, buy4);
+Console.WriteLine(basket.ToString());

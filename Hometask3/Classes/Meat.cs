@@ -1,4 +1,5 @@
 ﻿using Hometask1;
+using Hometask1.Enums;
 using Hometask3.Enums;
 using Type = Hometask3.Enums.Type;
 
@@ -42,8 +43,8 @@ public class Meat : Product
     
     public Meat() { }
     
-    public Meat(string name, decimal price, double weight, Category category, Type type) 
-        : base(name, price, weight)
+    public Meat(string name, decimal price, Currency currency, double weight, Category category, Type type) 
+        : base(name, price, currency, weight)
     {
         Category = category;
         Type = type;

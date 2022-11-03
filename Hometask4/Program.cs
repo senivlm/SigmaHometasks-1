@@ -1,12 +1,13 @@
 ﻿using Hometask1;
+using Hometask1.Enums;
 using Hometask3.Classes;
 using Hometask4;
 
 var storage = new Storage(
-    new Product("Pepsi", 4, 300), 
-    new Product("Fanta", 3, 250), 
-    new Product("Coca-cola", 1, 500), 
-    new Product("Schweppes", 2, 1000));
+    new Product("Pepsi", 4, Currency.UAH, 300), 
+    new Product("Fanta", 3, Currency.UAH, 250), 
+    new Product("Coca-cola", 1, Currency.UAH, 500), 
+    new Product("Schweppes", 2, Currency.UAH, 1000));
 
 Console.WriteLine("\n\nStorage before sort:");
 storage.Output();
