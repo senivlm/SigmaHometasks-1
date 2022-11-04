@@ -10,9 +10,9 @@ Console.WriteLine("Storage #1");
 storage.Output();
 
 var storage2 = new Storage(
-    new Product("Cola", 23, Currency.UAH, 500), 
-    new Meat("Globyno", 200, Currency.UAH, 200, Category.SecondaryVariety, Type.Beef), 
-    new DairyProduct("Milk", 300, Currency.UAH, 300, 14));
+    new Product("Cola", 23, Currency.UAH, 500, WeightUnit.Gram), 
+    new Meat("Globyno", 200, Currency.UAH, 200, WeightUnit.Gram, Category.SecondaryVariety, Type.Beef), 
+    new DairyProduct("Milk", 300, Currency.UAH, 300, WeightUnit.Gram, 14));
 
 Console.WriteLine("\n\nStorage #2");
 //storage2.Output();

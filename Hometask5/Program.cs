@@ -4,13 +4,12 @@ using Hometask5;
 
 var products = new List<Product>
 {
-    new ("Carrot", 10, Currency.UAH, 5),
-    new ("Banana", 5, Currency.UAH, 7),
-    new ("Banana", 5, Currency.UAH, 7),
-    new ("Banana", 5, Currency.UAH, 7),
-    new ("Cola", 15, Currency.UAH, 24.5),
-    new ("Cola", 15, Currency.UAH, 24.5),
-    new ("Cheese", 200, Currency.UAH, 12)
+    new ("Carrot", 2, Currency.USD, 5, WeightUnit.Kilo),
+    new ("Banana", 5, Currency.EUR, 7, WeightUnit.Kilo),
+    new ("Potato", 5, Currency.UAH, 7, WeightUnit.Kilo),
+    new ("Banana", 5, Currency.UAH, 7, WeightUnit.Kilo),
+    new ("Cola", 1, Currency.USD, 1, WeightUnit.Kilo),
+    new ("Cheese", 200, Currency.UAH, 500, WeightUnit.Gram)
 };
 
 var buy = new Buy(products[0], 5);

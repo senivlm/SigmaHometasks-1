@@ -9,21 +9,20 @@ public class DairyProduct : Product
 {
     private uint _expirationDate;
 
-    public DairyProduct(string name, decimal price, Currency currency, double weight, uint expirationDate) 
-        : base(name, price, currency, weight) 
+    public DairyProduct(string name, decimal price, Currency currency, 
+                        double weight, WeightUnit weightUnit, uint expirationDate) 
+        : base(name, price, currency, weight, weightUnit) 
         => _expirationDate = expirationDate;
 
     public override void ChangePrice(decimal percents)
     {
         base.ChangePrice(percents);
-        
         if (_expirationDate <= 180)
         {
-            Price += Price * 100 / Constraints.HalfYearExpiration;
+            Price = (Price.Value + Price.Value * 100 / Constraints.HalfYearExpiration, Price.Currency);
             return;
         }
-        
-        Price += Price * 100 / Constraints.YearExpiration;
+        Price = (Price.Value + Price.Value * 100 / Constraints.YearExpiration, Price.Currency);
     }
     
     public override void ConsoleInput()

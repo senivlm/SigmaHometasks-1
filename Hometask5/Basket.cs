@@ -10,14 +10,13 @@ public class Basket
         get => new List<Buy>(_buys);
         set
         {
-            var currency = value.First().Product.Currency;
-            bool condition = value.All(t => t.Product.Currency == currency);
+            var currency = value.First().Product.Price.Currency;
+            bool condition = value.All(t => t.Product.Price.Currency == currency);
             if (condition)
             {
                 _buys = value;
                 return;
             }
-            
             Console.WriteLine("All currencies should be the same");
         }
     }
@@ -34,8 +33,8 @@ public class Basket
             return;
         }
         
-        var currency = _buys.First().Product.Currency;
-        if (currency != buy.Product.Currency)
+        var currency = _buys.First().Product.Price.Currency;
+        if (currency != buy.Product.Price.Currency)
         {
             Console.WriteLine($"Currency of this basket is: {currency}");
             return;

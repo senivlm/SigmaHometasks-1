@@ -10,7 +10,7 @@ public class Buy
     public Product Product
     {
         get => _product;
-        set => _product = new (value.Name, value.Price, value.Currency, value.Weight);
+        set => _product = (Product)value.Clone();
     }
 
     public override string ToString() => $"Product {_product.ToString()}\tAmount: {Amount}";

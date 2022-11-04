@@ -33,7 +33,7 @@ public class Storage
     {
         foreach (var item in _products)
         {
-            item.Price += item.Price * 100 / percents;
+            item.Price = (item.Price.Value + item.Price.Value * 100 / percents, item.Price.Currency);
         }
     }
 

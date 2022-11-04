@@ -13,14 +13,12 @@ public class Meat : Product
     public override void ChangePrice(decimal percents)
     {
         base.ChangePrice(percents);
-
         if (Category.Equals(Category.PrimaryVariety))
         {
-            Price += Price * 100 / Constraints.PrimarySortPercentage;
+            Price = (Price.Value + Price.Value * 100 / Constraints.PrimarySortPercentage, Price.Currency);
             return;
         }
-
-        Price += Price * 100 / Constraints.SecondarySortPercentage;
+        Price = (Price.Value + Price.Value * 100 / Constraints.SecondarySortPercentage, Price.Currency);
     }
     
     public override void ConsoleInput()
@@ -43,8 +41,9 @@ public class Meat : Product
     
     public Meat() { }
     
-    public Meat(string name, decimal price, Currency currency, double weight, Category category, Type type) 
-        : base(name, price, currency, weight)
+    public Meat(string name, decimal price, Currency currency, 
+                double weight, WeightUnit weightUnit, Category category, Type type) 
+        : base(name, price, currency, weight, weightUnit)
     {
         Category = category;
         Type = type;
