@@ -16,7 +16,7 @@ public class Problem2Solver : IProblemSolver
             Console.WriteLine();
         }
     }
-
+// Приємно, що наочно!
     private void OutputColorMatrix(int[,] matrix)
     {
         for (int row = 0; row < matrix.GetLength(0); row++)
@@ -39,7 +39,7 @@ public class Problem2Solver : IProblemSolver
         for (int i = 0; i < arr.Count - 1; i++)
         {
             if (arr[i] == arr[i + 1]) tempCount++;
-            else tempCount = 1;
+            else tempCount = 1;//Тут загубили потрібну довжину
 
             if (tempCount <= sequenceCount) continue;
             sequenceCount = tempCount;
