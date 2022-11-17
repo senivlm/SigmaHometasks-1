@@ -42,6 +42,7 @@ public class Basket
         
         _buys.Add(buy);
     }
+    // бажано мати змогу вилучати також.
 
     public override bool Equals(object? obj) =>
         _buys.OrderBy(t => t.Product.Name)
