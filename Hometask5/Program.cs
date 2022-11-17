@@ -1,7 +1,8 @@
 ﻿using Hometask1;
 using Hometask1.Enums;
 using Hometask5;
-
+// ваші бали 94	95	95	90	95
+// Прибрати всі консольні друки з модельних класів
 var products = new List<Product>
 {
     new ("Carrot", 2, Currency.USD, 5, WeightUnit.Kilo),
