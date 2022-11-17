@@ -48,4 +48,5 @@ public class Meat : Product
         Category = category;
         Type = type;
     }
+  
 }
