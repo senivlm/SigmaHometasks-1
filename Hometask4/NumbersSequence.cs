@@ -4,6 +4,7 @@ public class NumbersSequence
 {
     private List<int> _numbers;
     public List<int> Numbers => new (_numbers);
+   // Це тільки результат одного з методів. його в поля не потрібно вносити.
     private Dictionary<int, int> _numbersFrequency;
 
     public void SetNumbersFrequency() => 
@@ -19,10 +20,10 @@ public class NumbersSequence
     }
     
     public (int,int) LongestSequence(List<int> nums)
-    {
+    {//алгоритмічно не все враховано
         int pos = 0, bestPosition = 0, bestLength = 0, length = 1;
         for (int i = 0; i < nums.Count() - 1; i++)
-        {
+        {// Навіщо 1 умова?
             if (nums[i] == nums[i + 1] && Helper.IsPrime(nums[i]))
             {
                 length++;
