@@ -1,0 +1,11 @@
+Apartment number: 1	Address: Naberezhna 10	Owner surname: Petrenko
+Counter data:
+date: Ten January Two Thousand Twenty Two	data: 1010
+date: Ten February Two Thousand Twenty Two	data: 2010
+date: Ten March Two Thousand Twenty Two	data: 3010
+date: Ten April Two Thousand Twenty Two	data: 4010
+date: Ten May Two Thousand Twenty Two	data: 5010
+date: Ten June Two Thousand Twenty Two	data: 6010
+date: Ten July Two Thousand Twenty Two	data: 7010
+date: Ten August Two Thousand Twenty Two	data: 8010
+date: Ten September Two Thousand Twenty Two	data: 9010

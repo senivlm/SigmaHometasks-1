@@ -1,0 +1,17 @@
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Hometask6.exe
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Hometask6.deps.json
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Hometask6.runtimeconfig.json
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Hometask6.dll
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Hometask6.pdb
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.csproj.AssemblyReference.cache
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.AssemblyInfoInputs.cache
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.AssemblyInfo.cs
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.csproj.CoreCompileInputs.cache
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.dll
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\refint\Hometask6.dll
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.pdb
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.genruntimeconfig.cache
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\ref\Hometask6.dll
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\aesense\Desktop\sigma-learning\ht1\SigmaHometasks\Hometask6\obj\Debug\net6.0\Hometask6.csproj.CopyComplete

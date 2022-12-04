@@ -1,0 +1,38 @@
+Apartment number: 1	Address: Naberezhna 10	Owner surname: Petrenko
+Counter data:
+date: Ten January Two Thousand Twenty Two	data: 1010
+date: Ten February Two Thousand Twenty Two	data: 2010
+date: Ten March Two Thousand Twenty Two	data: 3010
+date: Ten April Two Thousand Twenty Two	data: 4010
+date: Ten May Two Thousand Twenty Two	data: 5010
+date: Ten June Two Thousand Twenty Two	data: 6010
+date: Ten July Two Thousand Twenty Two	data: 7010
+date: Ten August Two Thousand Twenty Two	data: 8010
+date: Ten September Two Thousand Twenty Two	data: 9010
+
+
+Apartment number: 2	Address: Naberezhna 10	Owner surname: Petrenko
+Counter data:
+date: Eleven March Two Thousand Twenty Two	data: 0
+date: Eleven April Two Thousand Twenty Two	data: 0
+date: Eleven May Two Thousand Twenty Two	data: 0
+date: Eleven June Two Thousand Twenty Two	data: 0
+date: Eleven July Two Thousand Twenty Two	data: 0
+date: Eleven August Two Thousand Twenty Two	data: 0
+date: Eleven September Two Thousand Twenty Two	data: 0
+date: Eleven October Two Thousand Twenty Two	data: 0
+date: Eleven November Two Thousand Twenty Two	data: 0
+
+
+Apartment number: 3	Address: Naberezhna 10	Owner surname: Petrenko
+Counter data:
+date: Twelve January Two Thousand Twenty Two	data: 2422
+date: Twelve March Two Thousand Twenty Two	data: 2525
+date: Twelve May Two Thousand Twenty Two	data: 2626
+date: Twelve June Two Thousand Twenty Two	data: 2722
+date: Twelve July Two Thousand Twenty Two	data: 2800
+date: Twelve August Two Thousand Twenty Two	data: 2900
+date: Twelve September Two Thousand Twenty Two	data: 3999
+date: Twelve November Two Thousand Twenty Two	data: 4699
+date: Twelve December Two Thousand Twenty Two	data: 5232
+
