@@ -14,6 +14,7 @@ public class Problem2Solver : IProblemSolver
         for (int i = cardNumber.Length - 1; i >= 0; i--)
         {
             var nx = cardNumber.ToArray();
+            // тут уже буде не коректна робота, якщо прийде довільна стрічка.
             var n = int.Parse(nx[i].ToString());
 
             if (alternate)
@@ -32,7 +33,7 @@ public class Problem2Solver : IProblemSolver
     }
     
     private CardType FindCardType(string cardNumber)
-    {
+    {// покажемо для групи регулярні вирази.
         if (Regex.Match(cardNumber, @"^4[0-9]{12}(?:[0-9]{3})?$").Success)
         {
             return CardType.Visa;
